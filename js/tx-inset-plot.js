@@ -1,3 +1,4 @@
+// Start of the tx-inset-plot.js file
 function(el) {
   el.on("plotly_hover", function(d) {
     var pt = d.points[0];
@@ -14,7 +15,7 @@ function(el) {
     // Find the array index of the histogram trace
     var histogramIndex = types.indexOf("histogram");
 
-    // If the histogram trace already exists, just supply new x values
+    // If the histogram trace already exists, supply new x values
     if (histogramIndex > -1) {
 
       Plotly.restyle(el.id, "x", [sales], histogramIndex);

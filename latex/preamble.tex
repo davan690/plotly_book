@@ -2,6 +2,7 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage[bf,singlelinecheck=off]{caption}
+\usepackage[all]{nowidow}
 
 \setmainfont[UprightFeatures={SmallCapsFont=AlegreyaSC-Regular}]{Alegreya}
 
@@ -89,6 +90,7 @@
   {\end{rmdblock}}
 
 \usepackage{makeidx}
+\newcommand{\indexc}[1]{\index{#1@\texttt{#1}}}
 \makeindex
 
 \urlstyle{tt}
@@ -100,5 +102,7 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
+\usepackage{float}
 
 \frontmatter
